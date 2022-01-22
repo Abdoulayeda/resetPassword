@@ -1,0 +1,4 @@
+Easyadmin
+KnpPaginator
+Webpack
+composer require symfonycasts/reset-password-bundle

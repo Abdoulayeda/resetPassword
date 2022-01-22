@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<div class="container">
+
+ <div class="row mt-5">
+
+   <div class="col-lg-4">
+    <h3>{{ produit.nom }}</h3>
+    <p>{{ produit.description|raw }}</p>
+    <p>{{ produit.prix }} FCFA </p>
+   </div>
+
+   <div class="col-lg-6">
+    <img src="{{ vich_uploader_asset(produit, 'imageFile') }}" width="500px"; height="600px";>
+   </div>
+
+ 
+
+   {# <a href="{{path('panier_add', {id: produit.id})}}" class="btn btn-primary col-lg-3">Ajouter au panier</a> #}
+
+
+<div>
+
+{% endblock %}
